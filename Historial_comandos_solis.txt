@@ -1,54 +1,30 @@
-[200~git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes~
-mkdir -p ~/Documents/UTN_SO
-cd ~/Documents/UTN_SO
-git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
-cd UTN-FRA_SO_Examenes
-vagrant up
-cd ~/Documents/UTN_SO/UTN-FRA_SO_Examenes
-vagrant up
-pwd
-cd ~/UTN-FRA_SO_Examenes
-cd ~
-git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
-cd UTN-FRA_SO_Examenes
 ls
-vagrant up
-pwd
-ls -F
-cd 202411
+cd Recu_TP_AySO
 ls
-vagrant up
-cd bash_script
-vagrant up
-find . -name "Vagrantfile"
-cd bash_script
-cd bash_script
-ls -la
-cd ~
-rm -rf UTN-FRA_SO_Examenes
-git clone https://github.com/sofiasartori/UTN-FRA_SO_Examenes
-cd UTN-FRA_SO_Examenes
-./script_Precondicion.sh
-export HISTFILE=~/.bash_history
-./script_Precondicion.sh
-cd Recu_TP_AySO
-cd ~
-git clone https://github.com/elianssolis17-design/Recu_TP_AySO
-cd Recu_TP_AySO
-nano Nombre_Del_Archivo.sh
-#!/bin/bash
-sudo mkdir -p /datos/{textos/{Libros,revistas},videos/{peliculas,series}}
+nano Punto_A.sh
+sudo chmod +x Punto_A.sh
+sudo ./Punto_A.sh
+ls -l /datos
 nano usuario.sh
-[200~$ ./script_Precondicion.sh
-ls
 nano Punto_B.sh
+sudo chmod +x usuario.sh Punto_B.sh
+sudo ./usuario.sh
+sudo ./Punto_B.sh
+cat /datos/validar1.txt
 nano Punto_C.sh
+sudo chmod +x Punto_C.sh
+sudo ./Punto_C.sh
+cat /datos/validar1.txt
 nano Punto_D.sh
+sudo chmod +x Punto_D.sh
+./Punto_D.sh
+ls -l ~/Ejercicio_D
 nano Punto_E.sh
+sudo chmod +x Punto_E.sh
+./Punto_E.sh
+cat ~/Punto_E/Filtro_basico.txt
 nano Punto_F.sh
-chmod +x Punto_A.sh Punto_B.sh Punto_C.sh Punto_D.sh Punto_E.sh Punto_F.sh usuario.sh
-ls
-mv Nombre_Del_Archivo.sh Punto_A.sh
-nano usuario.sh
-chmod +x Punto_A.sh usuario.sh
+sudo chmod +x Punto_F.sh
+./Punto_F.sh
+cat ~/Punto_F/Filtro_Avanzado.txt
 history -a
